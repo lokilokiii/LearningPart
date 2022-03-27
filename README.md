@@ -1,7 +1,7 @@
 # LearningPart
 Everything I wrote or summarized. 
 
-# C
+## C
 * Pointer
 * String
 * 多文件编程
@@ -9,7 +9,7 @@ Everything I wrote or summarized.
 * 存储类别、链接和内存管理
 * 位运算
 
-# Linux
+## Linux
 * Linux系统分区
 * 命令速查
 * RPM包管理
@@ -18,12 +18,12 @@ Everything I wrote or summarized.
 * Linux容器管理
 * 归档管理
 
-# Python
+## Python
 * 装饰器、迭代器、生成器
 * RE解析、bs4解析
 * XPath解析
 
-# 计算机组成原理
+## 计算机组成原理
 * 编译工具链（编译器gcc g++）
 * 进程
 * 信息的表示和处理
