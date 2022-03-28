@@ -1,52 +1,56 @@
+- [我的小小经验](#我的小小经验)
+  - [大问题](#大问题)
+  - [引申：如何迁移master分支到main分支中](#引申如何迁移master分支到main分支中)
+  - [引申：在本地切换分支](#引申在本地切换分支)
+- [在GitHub中删除已有文件](#在github中删除已有文件)
+  - [1. 本地仓库的文件和远程仓库的文件同时删除](#1-本地仓库的文件和远程仓库的文件同时删除)
+  - [2. 只删除远程仓库，不删除本地仓库](#2-只删除远程仓库不删除本地仓库)
+
 ### **GIT通用操作**
 
-#### · 初始条件
+这里的内容非本人整理，仅作笔记学习用途
+
+#### 初始条件
 
 > 1.官网下载git（一路回车）
 >
 > 2.注册一个Github或者Gitee的账号
 
-#### · 添加密钥
+#### 添加密钥
 
 > 打开git bash
 
 ```bash
 cd ~/.ssh/
-git config --global user.name "Raymond_Meng"
-git config --global user.email "2391530014@qq.com"
-ssh-keygen -t rsa -C "2391530014@qq.com"
+git config --global user.name 
+git config --global user.email 
+ssh-keygen -t rsa -C 
 ```
 
 > 之后一路回车，按照提示的路径找到public key文件，复制内容到GitHub或者Gitee的SSH密钥里
 
-[![IR5Voj.png](https://z3.ax1x.com/2021/11/16/IR5Voj.png)](https://imgtu.com/i/IR5Voj)
-
-#### · 初始化仓库
-
-> 首先在GitHub或者Gitee上新建一个Repository。在本地，安装完git后，建立一个仓库文件夹，右键点击进入git bash here,敲入以下指令即完成一个项目的克隆与部署。
+####  初始化仓库
 
 ```bash
 git init
 ```
 
-#### · Git初始配置
+#### Git初始配置
 
 ```bash
-git config --global user.name "Raymond_Meng"
-git config --global user.email "2391530014@qq.com"
+git config --global user.name 
+git config --global user.email 
 ```
 
-#### · 关联远程仓库
+#### 关联远程仓库
 
 ```bash
 git remote add origin <项目地址>
 ```
 
-> 这里的项目地址就是你的Github或者Gitee项目主页的SSH或者HTTPS地址
+> 这里的项目地址就是你的Github或者Gitee项目主页的SSH或者HTTPS地
 
-[![IR4aqg.png](https://z3.ax1x.com/2021/11/16/IR4aqg.png)](https://imgtu.com/i/IR4aqg)
-
-#### · 更新远程仓库到本地
+#### 更新远程仓库到本地
 
 ```bash
 git pull origin master(以及任何你想要更新的branches)
@@ -54,7 +58,7 @@ git pull origin master(以及任何你想要更新的branches)
 
 > 如果新建的远程仓库没有用README.md初始化可以不需要，本质其实就是如果需要推送更改到远程仓库，需要先将本地仓库与远程仓库更新合并。
 
-#### · 提交项目
+#### 提交项目
 
 > 保存到缓存区
 
@@ -74,7 +78,7 @@ git commit -m "要描述的内容"
 git push origin master(以及任何你想要推送的branches)
 ```
 
-#### · 克隆
+#### 克隆
 
 ```bash
 git clone <项目地址>
@@ -82,7 +86,7 @@ git clone <项目地址>
 
 > 这个主要是用来克隆整个代码仓库到本地，在本地进行开发
 
-#### · 仓库后期推送的注意事项
+#### 仓库后期推送的注意事项
 
 > 1. 一定要有描述内容
 >
@@ -97,7 +101,7 @@ git clone <项目地址>
 >    git config --global https.https://github.com.proxy socks5://127.0.0.1:1080 
 >    ```
 
-#### · 多人协作
+#### 多人协作
 
 >  settings -> manage access 选择成员成为collaborators
 >
@@ -106,6 +110,8 @@ git clone <项目地址>
 
 
 ## 我的小小经验
+
+这里是我！
 
 ### 大问题
 
